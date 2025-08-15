@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floraslife - Premium Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f138a42-04fe-47f4-9036-0be5b5fc921b.png" alt="KicksHub logo with sneaker icon in gold" class="h-8 w-auto">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Shop</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Collections</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button id="cart-button" class="relative p-1 text-gray-400 hover:text-gray-500">
+                        <span class="absolute -top-1 -right-1 bg-indigo-600 text-white rounded-full h-5 w-5 flex items-center justify-center text-xs" id="cart-count">0</span>
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                    </button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900">
+        <div class="absolute inset-0">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2eea3431-ca34-493a-8c24-b42220f65c86.png" alt="Professional athlete running in our latest signature shoes on a track at sunset" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">STEP INTO STYLE</h1>
+            <p class="mt-6 text-xl text-indigo-100 max-w-3xl">Discover our premium collection of footwear designed for comfort, performance, and style.</p>
+            <div class="mt-10">
+                <a href="#" class="inline-block bg-indigo-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-indigo-700">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Featured Collection</h2>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">Our best selling sneakers and sport shoes</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <!-- Product 1 -->
+            <div class="group product-card">
+                <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b468a5fd-bd13-4b37-8fbc-8e8e2c91e716.png" alt="White and gold limited edition running shoes with breathable mesh and carbon fiber soles" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Pegasus Pro</h3>
+                <p class="mt-1 text-sm text-gray-700">Running Shoes</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <p class="text-lg font-bold text-indigo-600">$149.99</p>
+                    <button onclick="addToCart('Pegasus Pro', 149.99, 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1028da29-eb93-4101-bdbc-e47ee68f33ce.png')" class="bg-indigo-600 text-white px-3 py-1 rounded-md text-sm hover:bg-indigo-700">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group product-card">
+                <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f77c0438-9eea-4a30-9d15-62b29de3d3ec.png" alt="Black basketball shoes with high ankle support and responsive cushioning system" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Drive Max</h3>
+                <p class="mt-1 text-sm text-gray-700">Basketball Shoes</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <p class="text-lg font-bold text-indigo-600">$129.99</p>
+                    <button onclick="addToCart('Drive Max', 129.99, 'https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e8fa226-14c1-4bd6-918d-4e032e6899f3.png')" class="bg-indigo-600 text-white px-3 py-1 rounded-md text-sm hover:bg-indigo-700">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group product-card">
+                <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bdbc656-feca-4232-bf83-c658ca808b4e.png" alt="Retro-style sneakers in tan leather with white rubber soles and red accents" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Classic 77</h3>
+                <p class="mt-1 text-sm text-gray-700">Lifestyle Sneakers</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <p class="text-lg font-bold text-indigo-600">$99.99</p>
+                    <button onclick="addToCart('Classic 77', 99.99, 'https://placehold.co/600x600')" class="bg-indigo-600 text-white px-3 py-1 rounded-md text-sm hover:bg-indigo-700">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="group product-card">
+                <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                    <img src="https://placehold.co/600x600" alt="Minimalist white walking shoes with eco-friendly materials and flexible soles" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Eco Walk</h3>
+                <p class="mt-1 text-sm text-gray-700">Sustainable Footwear</p>
+                <div class="mt-4 flex justify-between items-center">
+                    <p class="text-lg font-bold text-indigo-600">$89.99</p>
+                    <button onclick="addToCart('Eco Walk', 89.99, 'https://placehold.co/600x600')" class="bg-indigo-600 text-white px-3 py-1 rounded-md text-sm hover:bg-indigo-700">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">Shop by Category</h2>
+        
+        <div class="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+            <a href="#" class="group relative block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cdfa4cba-0e22-44cd-8250-6f29220c0af0.png" alt="Various sport shoes lined up on a gym floor ready for action" class="w-full h-48 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Running</h3>
+                </div>
+            </a>
+            
+            <a href="#" class="group relative block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/680866cb-52f7-48eb-96c3-af2560bcee4f.png" alt="Basketball shoes close-up showing the advanced traction pattern" class="w-full h-48 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Basketball</h3>
+                </div>
+            </a>
+            
+            <a href="#" class="group relative block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d834d906-6771-4d97-9c8d-2dc3a6a3cfbb.png" alt="Stylish sneakers arranged on wooden steps in a modern home" class="w-full h-48 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Lifestyle</h3>
+                </div>
+            </a>
+            
+            <a href="#" class="group relative block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/362f0e65-fd8c-4a25-9f3b-fa6514beead3.png" alt="Hiking boots on a rocky trail with mountain background" class="w-full h-48 object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Outdoor</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-indigo-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">What Our Customers Say</h2>
+            
+            <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/169e8e29-943f-4b9e-b48e-61d4acc6eba9.png" alt="Portrait of Sarah Johnson, a satisfied running enthusiast" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium">Sarah Johnson</h4>
+                            <p class="text-indigo-600">Running Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"The Pegasus Pro has completely changed my running experience. The cushioning is perfect and they're holding up well after 300+ miles."</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/053f99de-2f81-4793-9362-b6d2f0f0a00a.png" alt="Portrait of Michael Chen, basketball player and sports coach" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium">Michael Chen</h4>
+                            <p class="text-indigo-600">Basketball Coach</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"As a coach, I recommend Drive Max to all my players. The ankle support is excellent without sacrificing responsiveness."</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a13be2f-1208-45e7-b93d-82b9e636ed21.png" alt="Portrait of Emma Rodriguez, fashion blogger and footwear enthusiast" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium">Emma Rodriguez</h4>
+                            <p class="text-indigo-600">Fashion Blogger</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600">"The Classic 77 sneakers are my go-to for everyday wear. They're comfortable, stylish, and pair well with everything."</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-indigo-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2">
+                <div class="p-12 sm:p-16 lg:p-20">
+                    <h2 class="text-2xl font-bold text-white">Sign up for our newsletter</h2>
+                    <p class="mt-4 text-indigo-200">Stay up to date with our new releases and exclusive offers.</p>
+                </div>
+                <div class="p-12 sm:p-16 lg:p-20 flex items-center">
+                    <form class="w-full">
+                        <div class="flex">
+                            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-l-lg focus:outline-none">
+                            <button type="submit" class="bg-indigo-900 text-white px-6 py-3 rounded-r-lg font-medium hover:bg-indigo-800">Subscribe</button>
+                        </div>
+                        <p class="mt-2 text-xs text-indigo-200">We respect your privacy. Unsubscribe at any time.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Shop</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-base hover:text-white">All Products</a></li>
+                        <li><a href="#" class="text-base hover:text-white">New Arrivals</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Best Sellers</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-base hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Shipping</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Returns</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-base hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    <p class="mt-4 text-sm">1234 Shoe Street, Footwear City, FC 12345</p>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 flex justify-between">
+                <p class="text-sm">© 2025 Floraslife. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-sm hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">Your Shopping Cart</h3>
+                        <button onclick="closeCart()" class="ml-auto -mt-1 -mr-1 text-gray-400 hover:text-gray-500 focus:outline-none">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <div id="cart-items" class="space-y-4">
+                            <!-- Cart items will be dynamically inserted here -->
+                        </div>
+                        <div id="empty-cart" class="text-center py-8">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1d265dac-09b2-459a-86b3-eb3e42924948.png" alt="Empty shopping cart illustration with dashed outline" class="mx-auto h-24 w-24 text-gray-400">
+                            <h3 class="mt-2 text-sm font-medium text-gray-900">Your cart is empty</h3>
+                            <p class="mt-1 text-sm text-gray-500">Start shopping to add items to your cart.</p>
+                            <div class="mt-6">
+                                <button onclick="closeCart()" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700">Continue Shopping</button>
+                            </div>
+                        </div>
+                        <div id="cart-footer" class="hidden mt-6 border-t pt-4">
+                            <div class="flex justify-between text-lg font-medium">
+                                <p>Total:</p>
+                                <p id="cart-total">$0.00</p>
+                            </div>
+                            <div class="mt-4">
+                                <button class="w-full bg-indigo-600 border border-transparent rounded-md py-3 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
+
